@@ -18,9 +18,9 @@ export default function Login() {
         <FormInput label='Senha' placeholder='Insira sua senha'  />
       </Box>
 
-      <ButtonComponent texto='ENTRAR' w="100%" bgColor="blue.800" mt={10} borderRadius="lg" />
+      <ButtonComponent texto='ENTRAR' h={50} w="100%" bgColor="blue.800" mt={8} borderRadius="lg" />
 
-      <Link href='http://www.google.com'>
+      <Link mt={1} href='http://www.google.com'>
         Esqueceu sua senha?
       </Link>
 

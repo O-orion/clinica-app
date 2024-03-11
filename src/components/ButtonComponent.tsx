@@ -7,6 +7,6 @@ interface ButtonProps extends ITextProps {
 
 export function ButtonComponent ({ texto, ...styles }: ButtonProps) {
     return (
-     <Button > {texto} </Button>
+     <Button  {...styles}> {texto} </Button>
     )
 }
