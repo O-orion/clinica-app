@@ -67,8 +67,9 @@ export default function Cadastro() {
                 })
             }
         </Box>
-  
-        <ButtonComponent  onPress={avancarSecao} texto='Avançar' w="100%" bgColor="blue.800" mt={10} borderRadius="lg" />
+        { numeroSecao > 0 &&
+                <ButtonComponent  onPress={avancarSecao} texto='Avançar' w="100%" bgColor="blue.800" mt={10} borderRadius="lg" />
+        }
         <ButtonComponent  onPress={voltarSecao} texto='Voltar' w="100%" bgColor="gray.400" mt={4} borderRadius="lg" />
   
       </VStack>
