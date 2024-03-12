@@ -5,7 +5,7 @@ import { Titulo } from './components/Titulo';
 import { FormInput } from './components/FormInput';
 import { ButtonComponent } from './components/ButtonComponent';
 
-export default function Login() {
+export default function Login( { navigation } ) {
   return (
     <VStack flex={1} alignItems="center" justifyContent="center" p={5} >
       <Image source={Logo} alt='Logo da Volt'></Image>
@@ -18,7 +18,7 @@ export default function Login() {
         <FormInput label='Senha' placeholder='Insira sua senha'  />
       </Box>
 
-      <ButtonComponent texto='ENTRAR' h={50} w="100%" bgColor="blue.800" mt={8} borderRadius="lg" />
+      <ButtonComponent onPress={() => navigation.navigate('Tabs')}  texto='ENTRAR' h={50} w="100%" bgColor="blue.800" mt={8} borderRadius="lg" />
 
       <Link mt={1} href='http://www.google.com'>
         Esqueceu sua senha?
@@ -27,7 +27,7 @@ export default function Login() {
       <Box mt={8} width="100%" flexDirection="row" justifyContent="center">
         <Text>Ainda não tem cadastro?</Text>
         <TouchableOpacity>
-          <Text color="blue.500" ml={1} >
+          <Text color="blue.500" ml={1}  onPress={() => navigation.navigate('Cadastro')} >
             Faça seu cadastro!
           </Text>
         </TouchableOpacity>
