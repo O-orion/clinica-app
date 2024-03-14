@@ -6,7 +6,7 @@ export default function Perfil() {
         <ScrollView flex={1}  >
             <VStack flex={1} alignItems='center' p={5} >
                 <Titulo color="blue.500" >Meu Perfil</Titulo>
-                <Avatar mt={4} source={{ uri: 'https://avatars.githubusercontent.com/u/78035167?v=4' }} />
+                <Avatar size='xl' mt={4} source={{ uri: 'https://avatars.githubusercontent.com/u/78035167?v=4' }} />
                 
                 <Titulo color="blue.500" >Informações Pessoais</Titulo>
                 <Titulo fontSize='lg' mb={1} >Lucas Viana Torres</Titulo>

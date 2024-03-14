@@ -5,9 +5,9 @@ interface DadosForm extends ITextProps {
     placeholder: string
 }
 
-export function FormInput({ label, placeholder }: DadosForm) {
+export function FormInput({ label, placeholder, mt=3 }: DadosForm) {
     return (
-        <FormControl mt={3}>
+        <FormControl mt={mt}>
             <FormControl.Label>{ label }</FormControl.Label>
             <Input shadow={3} placeholder={ placeholder } size='lg' w="100%" borderRadius="lg" bgColor='gray.100'></Input>
       </FormControl>
